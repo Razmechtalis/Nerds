@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Nerds</title>
 	<link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize-dist.css">
-	<link rel="stylesheet" href="css/style-dist.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
 	<!-- BEGIN page-header -->
@@ -18,7 +18,7 @@
 					<img src="img/logo-nerds.png" height="56" width="139" alt="">
 				</a>
 				<nav class="main-nav">
-					<a class="main-nav__link" href="#">Студия</a>
+					<a class="main-nav__link  main-nav__link--active" href="#">Студия</a>
 					<a class="main-nav__link" href="#">Клиенты</a>
 					<a class="main-nav__link" href="#">Магазин</a>
 					<a class="main-nav__link" href="#">Контакты</a>
@@ -28,7 +28,7 @@
 			<!-- END page-header__top -->
 			<!-- BEGIN slider -->
 			<div class="slider">
-				<input class="slider__radio-btn" type="radio" name="toggle" id="toggle-1">
+				<input class="slider__radio-btn" type="radio" name="toggle" id="toggle-1" checked>
 				<input class="slider__radio-btn" type="radio" name="toggle" id="toggle-2">
 				<input class="slider__radio-btn" type="radio" name="toggle" id="toggle-3">
 				<div class="slider__controls">
@@ -37,23 +37,31 @@
 					<label class="slider__toggle" for="toggle-3"></label>
 				</div>
 				<div class="slide  slider__slide-first">
-					<div class="slide__title">Долго, дорого, скрупулезно.</div>
-					<p class="slide__text">
-						Математически выверенный дизайн для вашего сайта или мобильного приложения.
-					</p>
-					<a href="" class="btn">Узнать больше</a>
+					<div class="slide__content">
+						<p class="slide__title">Долго, дорого, скрупулезно.</p>
 
+						<p class="slide__text">
+							Математически выверенный дизайн<br>
+							для вашего сайта или мобильного приложения.
+						</p>
+					<a href="" class="btn">Узнать больше</a>
+					</div>
 				</div>
 				<div class="slide  slider__slide-second">
-					<div class="slide__title">Любите ли вы математику, как любим ее мы?</div>
-					<p class="slide__text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-					<a href="" class="btn">Узнать больше</a>
+					<div class="slide__content">
+						<p class="slide__title">Любите&nbsp;ли вы&nbsp;математику, как любим ее&nbsp;мы?</p>
+						<p class="slide__text">Нашим дизайнерам мы&nbsp;удаляем нейроны, ответственные за&nbsp;креатив, чтобы дать им&nbsp;возможность все просчитать</p>
+						<a href="" class="btn">Узнать больше</a>
+					</div>
 
 				</div>
 				<div class="slide  slider__slide-third">
-					<div class="slide__title">Только наркотики, только хардкор!</div>
-					<p class="slide__text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-					<a href="" class="btn">Узнать больше</a>
+					<div class="slide__content">
+						<p class="slide__title">Только наркотики,<br>
+						только хардкор!</p>
+						<p class="slide__text">Все дизайнерские решения в&nbsp;нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+						<a href="" class="btn">Узнать больше</a>
+					</div>
 
 				</div>
 
