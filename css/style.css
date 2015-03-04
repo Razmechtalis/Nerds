@@ -549,10 +549,6 @@
 	min-height: 417px;
 }
 
-.page .form-contact {
-	display: none;
-}
-
 .contacts {
 	width: 195px;
 	padding: 24px 22px 26px 23px;
@@ -650,6 +646,146 @@
 	line-height: 1.38;
 	font-weight: 500;
 }
+
+/**
+* @form-contact
+*/
+
+.page .form-contact {
+	display: none;
+	position: absolute;
+	top: 380px;
+	left: 50%;
+	margin-left: -315px;
+}
+
+.form-contact {
+	position: relative;
+	width: 480px;
+	background-color: #fff;
+	padding: 54px 70px 50px 80px;
+	font-size: 0;
+	box-shadow: 0 0 40px rgba(0,0,1, .75);
+}
+
+.form-contact:before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 41px;
+	height: 41px;
+	border-radius: 50%;
+	background: #fb565a url("../img/cross.png") no-repeat center;
+}
+
+.text-input,
+.email-input {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+}
+
+.text-input__text-field,
+.email-input__text-field {
+
+	width: 188px;
+	padding: 8px 14px;
+	font-weight: 500;
+	border: 2px solid #d7dcde;
+	font-size: 12px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	outline: none;
+}
+
+
+
+.form-contact .text-input {
+	margin-right: 20px;
+}
+
+.form-contact__label {
+	display: inline-block;
+	vertical-align: top;
+	width: 110px;
+}
+
+.form-contact__label {
+	font-size: 16px;
+	line-height: 1.13;
+	font-weight: 500;
+	margin-bottom: 9px;
+}
+
+.form-contact .textarea-input {
+	margin-top: 21px;
+	margin-bottom: 48px;
+}
+
+.textarea-input__notice-field {
+	display: block;
+	padding: 8px 14px 0;
+	width: 428px;
+	height: 101px;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: 2px solid #d7dcde;
+	outline: none;
+}
+
+.form-contact__btn {
+	display: inline-block;
+	padding: 10px 0;
+	width: 220px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.form-contact .form-contact__btn--send {
+	margin-right: 20px;
+}
+
+.form-contact__btn--send {
+	color: #fff;
+	background-color: #fb565a;
+}
+
+.form-contact__btn--cancel {
+	color: #000;
+	background-color: #f1f1f1;
+}
+
+
+
+
+/**
+* $Catalog-page
+*/
+
+.page-header--inner .greeting {
+	margin-top: 63px;
+}
+
+.greeting {
+	margin: 0 auto;
+	padding-bottom: 86px;
+	outline: 1px solid green;
+	width: 700px;
+	font-size: 40px;
+	line-height: 1.15;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
 
 
 

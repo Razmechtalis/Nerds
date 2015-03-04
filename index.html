@@ -20,7 +20,7 @@
 				<nav class="main-nav">
 					<a class="main-nav__link  main-nav__link--active" href="#">Студия</a>
 					<a class="main-nav__link" href="#">Клиенты</a>
-					<a class="main-nav__link" href="#">Магазин</a>
+					<a class="main-nav__link" href="catalog.html">Магазин</a>
 					<a class="main-nav__link" href="#">Контакты</a>
 					<a class="main-nav__link" href="#"><i class="icon-font--basket"></i>Корзина</a>
 				</nav>
@@ -157,19 +157,20 @@
 		</div>
 		<!-- END footer-page -->
 		<form class="form-contact" action="#" method="post">
-		<div class="form-contact__close"></div>
 		<div class="text-input">
-			<label for="user-name" class="text-input__label">Ваше имя:</label>
+			<label for="user-name" class="form-contact__label">Ваше имя:</label>
 			<input class="text-input__text-field" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
 		</div>
 		<div class="email-input">
-			<label for="user-email" class="email-input__label">Ваш e-mail:</label>
+			<label for="user-email" class="form-contact__label">Ваш e-mail:</label>
 			<input type="email" class="email-input__text-field" name="email" id="user-email" placeholder="Для отправки ответа">
 		</div>
-			<label for="text-letter">Текст письма:</label>
-			<textarea class="form-contact__notice-field" id="text-letter" name="text-letter" rows="5" placeholder="В свободной форме"></textarea>
-			<a href="#" class="btn">Отправить</a>
-			<a href="#" class="btn">Отмена</a>
+			<div class="textarea-input">
+				<label for="text-letter" class="form-contact__label">Текст письма:</label>
+				<textarea class="textarea-input__notice-field" id="text-letter" name="text-letter" placeholder="В свободной форме"></textarea>
+			</div>
+			<a href="#" class="form-contact__btn  form-contact__btn--send">Отправить</a>
+			<a href="#" class="form-contact__btn  form-contact__btn--cancel">Отмена</a>
 		</form>
 
 </body>
